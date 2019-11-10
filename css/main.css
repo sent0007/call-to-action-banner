@@ -20,7 +20,8 @@ body {
   display: flex;
   align-items: flex-start;
   position: absolute;
-  bottom: 2em;
+  left: 1em;
+  top: 2em;
   max-width: 45em;
 }
 
@@ -30,28 +31,24 @@ body {
 }
 
 .logo img {
-  margin: 0 1em;
-  max-width: 75%;
-  height: auto;
+  margin: 0;
+  max-width: 100%;
+  width: auto;
 }
 
 div > h2 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 3rem;
   margin: 0;
-  width: 75%;
+  width: 60%;
 }
 
 div > p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
   margin: .5em 0;
-}
-
-.banner-text {
-
 }
 
 .btn {
@@ -62,7 +59,7 @@ div > p {
   background-color: #333;
   font-size: 1.5rem;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-big {
