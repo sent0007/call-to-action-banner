@@ -19,10 +19,13 @@ body {
 .container {
   display: flex;
   align-items: flex-start;
-  position: absolute;
-  left: 1em;
-  top: 2em;
   max-width: 45em;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .img-flex {
@@ -30,36 +33,50 @@ body {
   width: 100%;
 }
 
-.logo img {
-  margin: 0;
-  max-width: 100%;
-  width: auto;
+.logo {
+  display: inline-block;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-div > h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+.logo img {
+  width: 95%;
+  margin: .15em 0 .15em .15em;
+}
+
+.banner-text {
+  max-height: 100%;
+  margin-left: 2em;
+  margin-right: 1.5em;
+}
+
+div h2 {
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: 3rem;
   margin: 0;
-  width: 60%;
+  display: inline-block;
+  max-width: 7em;
 }
 
-div > p {
-  font-family: 'Roboto', sans-serif;
+div p {
+  font-family: Roboto, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
   margin: .5em 0;
+  display: inline-block;
 }
 
 .btn {
   display: inline-block;
-  padding: .45em .75em .5em;
+  padding: .75em;
   text-decoration: none;
   border-radius: 8px;
   background-color: #333;
   font-size: 1.5rem;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .btn-big {
@@ -68,4 +85,5 @@ div > p {
 
 .btn:hover {
   background-color: #000;
+  color: white;
 }
